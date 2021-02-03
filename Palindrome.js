@@ -23,21 +23,35 @@ console.log(palindrome("civic"))
 //Solution 2: Interview Cake Solution
     //Complexity: O(n) time and O(n) space 
 
-function hasPalindromePermutation(theString) {
+// function hasPalindromePermutation(theString) {
 
-    // Track characters we've seen an odd number of times
-    const unpairedCharacters = new Set();
+//     const unpairedCharacters = new Set();
   
-    for (let char of theString) {
-      if (unpairedCharacters.has(char)) {
-        unpairedCharacters.delete(char);
-      } else {
-        unpairedCharacters.add(char);
-      }
-    }
+//     for (let char of theString) {
+//       if (unpairedCharacters.has(char)) {
+//         unpairedCharacters.delete(char);
+//       } else {
+//         unpairedCharacters.add(char);
+//       }
+//     }
   
-    // The string has a palindrome permutation if it
-    // has one or zero characters without a pair
-    return unpairedCharacters.size <= 1;
+  
+//     return unpairedCharacters.size <= 1;
+//   }
+// console.log(hasPalindromePermutation("civic"))
+
+//-----------------------------------------------------------------------------------------//
+
+// Solution 3: 
+
+function palindrome(str){
+  
+  let reverse = ''
+
+  for (let character of str){
+    reverse = character + reverse
   }
-console.log(hasPalindromePermutation("civic"))
+  return str === reverse
+}
+
+console.log(palindrome("civic"))
