@@ -24,24 +24,24 @@ least 1 minute has to pass.
 // Complexity =  O(n) time and O(1) space 
   const stockPrices = [10, 7, 5, 8, 11, 9];
 
-  function getMaxProfit(stockPrices){
-    if (stockPrices.length < 2){
-        throw new Error('Getting a profit requires at least 2 prices')
-    }
-
-    let minPrice = stockPrices[0]
-    let maxProfit = stockPrices[1] - stockPrices[0]
-
-    for ( let i = 1; i < stockPrices.length; i ++){
-        const currenPrice = stockPrices[i]
-
-        const potentialProfit = currenPrice - minPrice
-
-        maxProfit = Math.max(maxProfit, potentialProfit)
-
-        minPrice = Math.min(minPrice,currenPrice)
-    }
-    return maxProfit
+function getMaxProfit(stockPrices){
+  if (stockPrices.length < 2){
+    throw new Error('Getting a profit requires at least 2 prices')
   }
+
+  let minPrice = stockPrices[0]
+  let maxProfit = stockPrices[1] - stockPrices[0]
+
+  for ( let i = 1; i < stockPrices.length; i ++){
+    const currenPrice = stockPrices[i]
+
+    const potentialProfit = currenPrice - minPrice
+
+    maxProfit = Math.max(maxProfit, potentialProfit)
+
+    minPrice = Math.min(minPrice,currenPrice)
+  }
+  return maxProfit
+}
 
   console.log(getMaxProfit(stockPrices));
