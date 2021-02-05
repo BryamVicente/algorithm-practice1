@@ -10,23 +10,23 @@
 
 // This seemed to work for some reason
 
-function reverseInt(n) {
-    // let reversed = n.toString()
-
-    for (let number of n){
-        n = number + n
+const reverseInt = (num) => {
+    let rev = 0;
+    
+    while (num != 0) {
+      rev = rev * 10 + num % 10;
+      num = parseInt(num / 10, 10);
     }
-    return n
-}
-
-console.log(reverseInt(1122))
+    
+    return rev;
+  };
 
 
 
 //UDEMY SOLUTION!!
 
-function reverseInt(n) {
-    const reversed = n.toString().split('').reverse().join('')
+// function reverseInt(n) {
+//     const reversed = n.toString().split('').reverse().join('')
 
-    return parseInt(reversed) * Math.sign(n)
-}
+//     return parseInt(reversed) * Math.sign(n)
+// }
