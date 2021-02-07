@@ -54,3 +54,18 @@ var romanToInt = function(s) {
 };
 
 console.log(romanToInt("III"))
+
+
+
+
+var lookupAsArray = Object.keys(lookupObj)
+
+while(num>0) {
+  for (var i=0 ; i< lookupAsArray; i++) { // This line is optimised by browsers
+    if(num >= lookupAsArray[i]) {         // so is faster than it seems
+      roman = roman + lookupObj[lookupAsArray[i]];        
+      num = num - lookupAsArray[i];
+      break;
+    }
+  }
+}    
