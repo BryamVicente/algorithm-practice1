@@ -18,6 +18,10 @@
 // SOLUTION THAT I SHOULD KNOW!!
 // Complexity = O(n) time and I think O(1) space 
 
+    //Step 1: Create an empty string called "reversedString"
+    //Step 2: For each character in the provided string, take the character and add it to the start or "reversedString"
+    //Step 3: Return the variable "reversedString"
+    
 function reverse(str){
 
     let reversedString = ''
