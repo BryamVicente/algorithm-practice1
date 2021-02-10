@@ -13,6 +13,21 @@ Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 */
 
 
+// This solution is even faster!!
+
+const twoSum = (nums, target) => {
+    const numObject = {};
+    
+    for (let i = 0; i < nums.length; i++){
+
+        if (numObject[nums[i]] >= 0){
+            return [numObject[nums[i]], i]
+        }
+        numObject[target-nums[i]] = i
+    }
+};
+
+
 /*
 //BRUTE FORCE ---> O(n^2) time
 
@@ -34,7 +49,9 @@ const input = [2, 7, 11, 15]
 console.log(twoSum(input, 9))
 */
 
-// More improved solution!!! With complexity of O(n) time and increased space since hashes need to be created 
+/*
+// More improved solution!!! With complexity of O(n) time 
+and increased space since hashes need to be created 
 
 function twoSum(num, target){
     let numObject = {}
@@ -53,3 +70,10 @@ function twoSum(num, target){
 }
 const input = [2, 7, 11, 15]
 console.log(twoSum(input, 9))
+
+*/
+
+
+
+
+
