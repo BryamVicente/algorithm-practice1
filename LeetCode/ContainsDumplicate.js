@@ -12,9 +12,9 @@ Output: true
 
 /*
 Notes: 
+- Create a set()
 - iterate over array 
 - as iteration is happening, the loop is checking each number for duplicate 
-
 */
 
 const containsDuplicate = (nums) => {
@@ -34,10 +34,8 @@ const integers1 = [1,2,3,1]
 const integers2 = [1,2,3,4,5]
 
 console.log(containsDuplicate(integers2))
-
-
-
     // This solution is really fast but uses too many built methods!
 // const containsDuplicate = (numbers) => {
 //     return new Set(numbers).size !== numbers.length
 // }
+
