@@ -16,7 +16,7 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 const maxProfit = function(prices) {
     let maxProfit = 0;
     let lowestPrice  = prices[0];
-    for(let i = 1; i < prices.length; i++) {
+    for (let i = 1; i < prices.length; i++) {
         lowestPrice = Math.min(prices[i], lowestPrice);
         maxProfit = Math.max(maxProfit, prices[i] - lowestPrice);
     }

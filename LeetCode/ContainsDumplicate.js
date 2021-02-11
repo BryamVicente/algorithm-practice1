@@ -17,6 +17,8 @@ Notes:
 - as iteration is happening, the loop is checking each number for duplicate 
 */
 
+// Search the difference between Set() and Arrays
+
 const containsDuplicate = (nums) => {
    
     let numbers = new Set()
@@ -32,8 +34,12 @@ const containsDuplicate = (nums) => {
 }
 const integers1 = [1,2,3,1]
 const integers2 = [1,2,3,4,5]
+const integers3 = [-1, 1, 2, 3, -2]
+const integers4 = ["1", 1, 2,3]
 
-console.log(containsDuplicate(integers2))
+console.log(containsDuplicate(integers4))
+
+
     // This solution is really fast but uses too many built methods!
 // const containsDuplicate = (numbers) => {
 //     return new Set(numbers).size !== numbers.length

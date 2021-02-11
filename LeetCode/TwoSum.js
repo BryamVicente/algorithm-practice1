@@ -14,7 +14,7 @@ Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 
 // This solution is even faster!!
-
+// DO moer research on this answer!!
 const twoSum = (nums, target) => {
     const numObject = {};
     
@@ -26,7 +26,8 @@ const twoSum = (nums, target) => {
         numObject[target-nums[i]] = i
     }
 };
-
+const input = [0, -2, 11, -7, 15]
+console.log(twoSum(input, -9))
 
 /*
 //BRUTE FORCE ---> O(n^2) time
