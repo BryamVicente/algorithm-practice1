@@ -16,27 +16,24 @@ Could you solve it with constant space complexity? (The output array does not co
 as extra space for the purpose of space complexity analysis.)
 */
 
+// Complexity  = O(n) time and O(n) space 
+
 const productExceptSelf = (nums) => {
-    let outputs = []
+    let output = []
+    let right = 1
+    let left = 1
 
-    for (let i = 0; i < nums.length;i++){
-        if (i === 0){
-            outputs[i] = 1
-        }else {
-            outputs[i] = outputs[i - 1] * nums[i -1]
-        }
+    for (let i = 0; i < nums.length; i++){
+        output[i] = left
+        left = left * nums[i]
     }
-
-    let output;
+    
     for (let i = nums.length - 1; i >= 0; i --){
-        if (i === nums.length - 1){
-            output = 1
-        }else {
-            output *= nums[i + 1]
-        }
-        outputs[i] *= output
+        output[i] = right* output[i]
+        right = right * nums[i]
     }
-   return outputs
+
+    return output
 }
 console.log(productExceptSelf([1,2,3,4]))
 console.log(productExceptSelf([5,6,7,8]))
