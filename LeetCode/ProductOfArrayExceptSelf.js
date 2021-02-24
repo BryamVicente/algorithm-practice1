@@ -18,24 +18,23 @@ as extra space for the purpose of space complexity analysis.)
 
 // Complexity  = O(n) time and O(n) space 
 
-const productExceptSelf = (taco) => {
-
+const productExceptSelf = (nums) => {
+    
     let output = []
     let right = 1
     let left = 1
 
-    for (let i = 0; i < taco.length; i++){
+    for (let i = 0; i < nums.length; i++){
         output[i] = left
-        left = left * taco[i]
+        left = left * nums[i]
     }
     
-    for (let i = taco.length - 1; i >= 0; i --){
+    for (let i = nums.length - 1; i >= 0; i --){
         output[i] = right* output[i]
-        right = right * taco[i]
+        right = right * nums[i]
     }
 
     return output
 }
 console.log(productExceptSelf([1,2,3,4]))
 console.log(productExceptSelf([5,6,7,8]))
-console.log(productExceptSelf([9,10,7,8]))
