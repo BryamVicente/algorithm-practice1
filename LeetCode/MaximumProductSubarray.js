@@ -1,6 +1,6 @@
 /*
-
-Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product.
+Given an integer array nums, find the contiguous subarray within an array 
+(containing at least one number) which has the largest product.
 
 Example 1:
 
@@ -12,25 +12,54 @@ Example 2:
 Input: [-2,0,-1]
 Output: 0
 Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
-
 */
+//
+
+// function maxProduct(nums) {
+    
+//     let maxTillIndex = [nums[0]]
+//     let minTillIndex = [nums[0]]
+//     let product = nums[0]
+    
+//     for(let i = 1; i < nums.length; i++){
+        
+//         let num = nums[i]
+        
+//         maxTillIndex[i] = Math.max(num, num * maxTillIndex[i -1], num * minTillIndex[i - 1])
+        
+//         minTillIndex[i] = Math.min(num, num * maxTillIndex[i -1], num * minTillIndex[i - 1])
+
+//         product = Math.max(product, maxTillIndex[i])
+//     }
+    
+//     return product
+// };
 
 function maxProduct(nums) {
-    
+
     let maxTillIndex = [nums[0]]
     let minTillIndex = [nums[0]]
-    let product = nums[0]
-    
-    for(let i = 1; i < nums.length; i++){
-        
-        let num = nums[i]
-        
-        maxTillIndex[i] = Math.max(num, num * maxTillIndex[i -1], num * minTillIndex[i - 1])
-        
-        minTillIndex[i] = Math.min(num, num * maxTillIndex[i -1], num * minTillIndex[i - 1])
+    let max = nums[0]
 
-        product = Math.max(product, maxTillIndex[i])
+    for(let i = 1; i < nums.length; i++){
+
+        let num = nums[i]
+
+        maxTillIndex[i] = Math.max(
+        num, 
+        num * maxTillIndex[i -1], 
+        num * minTillIndex[i -1]
+        )
+
+        minTillIndex[i] = Math.min(
+            num, 
+            num * maxTillIndex[i -1], 
+            num * minTillIndex[i -1]
+        )
+
+        max = Math.max(max, maxTillIndex[i] )
     }
-    
-    return product
-};
+    return max 
+}
+
+console.log(maxProduct([2,3,-2,4]))
