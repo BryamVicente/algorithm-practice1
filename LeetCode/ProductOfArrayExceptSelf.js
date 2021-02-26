@@ -36,5 +36,9 @@ const productExceptSelf = (nums) => {
 
     return output
 }
+
+
+
+
 console.log(productExceptSelf([1,2,3,4]))
 console.log(productExceptSelf([5,6,7,8]))
