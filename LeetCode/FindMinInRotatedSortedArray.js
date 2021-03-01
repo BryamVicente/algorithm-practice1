@@ -21,8 +21,10 @@ Output: 0
 Explanation: The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
 */
 
-/* When questions have to do with sorted data, it's best practice to approach problems using Binar 
+/* When questions have to do with sorted data, it's best practice to approach problems using Binary
 search method */
+
+// https://www.youtube.com/watch?v=ig1m91QK0c8
 
 const findMin = (nums) => {
 
