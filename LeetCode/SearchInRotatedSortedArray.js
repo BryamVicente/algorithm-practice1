@@ -31,45 +31,27 @@ Follow up: Can you achieve this in O(log n) time complexity?
 
 const search = (nums, target) => {
 
-    if (nums === null || nums.length === 0){
-        return - 1
+    if (nums.length === 0) return -1;
+  
+  var index = -1,
+    head = 0,
+    tail = nums.length - 1,
+    mid;
+  
+  while (head <= tail) {
+    mid = Math.floor((head + tail) / 2);
+    if (nums[mid] === target) {
+      index = mid;
+      break;
+    } else if ((nums[head] <= target && target < nums[mid]) ||
+               (nums[head] > nums[mid] && (nums[head] <= target || target < nums[mid]))) {
+      tail = mid - 1;
+    } else {
+      head = mid + 1;
     }
-
-    let left = 0
-    let right = nums.length - 1
-
-    while (left < right){
-        let midpoint = left + (right - left / 2)
-
-        if (nums[midpoint] > nums[right]){
-            left = midpoint + 1
-        } else {
-            right = midpoint
-        }
-    }
-
-    let startingPoint = left 
-    left = 0 
-    right = nums.length - 1
-
-    if (target >= nums[startingPoint] && target <= nums[right]){
-        left = startingPoint
-    }else {
-        right = startingPoint
-    }
-
-    while (left <= right){
-        let midpoint = left + (right -left) /2
-
-        if (nums[midpoint] === target){
-
-        }else if (nums[midpoint] < target){
-            left = midpoint + 1
-        }else {
-            right = midpoint - 1
-        }
-    }
-    return - 1
+  }
+  
+  return index;
 }
 
 console.log(search([4,5,6,7,0,1,2], 0))
