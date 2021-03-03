@@ -33,7 +33,6 @@ const productExceptSelf = (nums) => {
         output[i] = right* output[i]
         right = right * nums[i]
     }
-
     return output
 }
 

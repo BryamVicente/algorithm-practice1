@@ -29,22 +29,25 @@ nums is guaranteed to be rotated at some pivot.
 Follow up: Can you achieve this in O(log n) time complexity?
 */
 
+// Solution explanation ---> https://leetcode.com/problems/search-in-rotated-sorted-array/discuss/14581/JavaScript-AC-Code 
+
+
 const search = (nums, target) => {
 
-    if (nums.length === 0) return -1;
+  if (nums.length === 0) return -1;
   
-  var index = -1,
+    let index = -1,
     head = 0,
     tail = nums.length - 1,
     mid;
   
-  while (head <= tail) {
+    while (head <= tail) {
     mid = Math.floor((head + tail) / 2);
     if (nums[mid] === target) {
       index = mid;
       break;
     } else if ((nums[head] <= target && target < nums[mid]) ||
-               (nums[head] > nums[mid] && (nums[head] <= target || target < nums[mid]))) {
+    (nums[head] > nums[mid] && (nums[head] <= target || target < nums[mid]))) {
       tail = mid - 1;
     } else {
       head = mid + 1;
