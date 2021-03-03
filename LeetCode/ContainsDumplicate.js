@@ -18,15 +18,21 @@ Notes:
 */
 
 // Search the difference between Set() and Arrays
-
-
 // Source: https://www.youtube.com/watch?v=eNhmrzS_hY0 
 
 // const containsDuplicate = (nums) => {
    
+     // We create a Set because the values should be unique
 //     let numbers = new Set()
 
+    // for of loops can be used in this case
+
 //     for (let num of nums){
+
+    // For this conditional we're checking to see if the Set has the current number that's being iterated
+    // If it doesn't, then that number should be added in the Set, or else I should return true since that number is a duplicate
+    // Otherwise return false 
+
 //         if (!numbers.has(num)){
 //             numbers.add(num)
 //         } else {
@@ -35,28 +41,35 @@ Notes:
 //     }
 //     return false
 // }
-// const integers1 = [1,2,3,1]
-// const integers2 = [1,2,3,4,5]
-// const integers3 = [-1, 1, 2, 3, -2]
-// const integers4 = ["1", 1, 2,3]
 
-// console.log(containsDuplicate(integers4))
+// -------------------------------------------------------------------------------//
 
-
-    // This solution is really fast but uses too many built-in methods!
+// This solution is really fast but uses too many built-in methods!
 // const containsDuplicate = (numbers) => {
+
+    // This is a much more efficient way of writing it because it only needs one line
+    // Having 'return' gives you a boolean value and that's what the questions wants
+    // I can create a Set while also checking its size 
+    // If the size of the Set is not equal to the length of the array, then it should return either true or false
+
 //     return new Set(numbers).size !== numbers.length
 // }
 
-
+// -------------------------------------------------------------------------------//
 
 const containsDuplicate = (nums) => {
 
-    let mySet = new Set(nums)
-    // console.log(mySet)
-    if (mySet.size === nums.length){
+    // We create a Set because the values should be unique
+    let newSet = new Set(nums)
+    console.log(newSet)
+
+    // For this conditional we're trying to check if the size of the Set is equal to the length of the array
+    // If the array is larger that means that there're dublicates 
+    // If they're equal to each other then it should return false or else it should return true
+    if (newSet.size === nums.length){
         return false
     }
+
     return true
 }
 
