@@ -16,13 +16,22 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 
 const maxProfit = (prices) => {
 
+    // We have to set the max profit to 0 since that's what we're starting with
     let maxProfit = 0
+    // we're starting from the beginning of the array since we automatically have to buy first before selling
     let buyPrice = prices[0]
 
+    // Here we have to create a for loop that iterates over the prices array 
     for(let i = 1; i < prices.length; i++){
+        
+        /*We have to change the value of buyPrice because it has to be the smallest number between 
+        the currentPrice and the first number of the array */
         buyPrice = Math.min(prices[i], buyPrice)
+        /*MaxProfit needs to be equal to the largest number between the current price minus the buyPrice 
+        and maxProfit which is currently zero */
         maxProfit = Math.max(prices[i] - buyPrice, maxProfit)
     }
+    // Once the loop is done, we need to return the max Profit which be an integer 
     return maxProfit
 }
 
