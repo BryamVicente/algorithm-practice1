@@ -73,4 +73,4 @@ const containsDuplicate = (nums) => {
     return true
 }
 
-console.log(containsDuplicate([1,2,3,1]))
+console.log(containsDuplicate([1,2,3,1, 2,4,4]))
