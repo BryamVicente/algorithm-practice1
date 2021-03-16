@@ -61,7 +61,8 @@ const containsDuplicate = (nums) => {
 
     // We create a Set because the values should be unique
     let newSet = new Set(nums)
-    console.log(newSet)
+    console.log(newSet.size)
+    console.log(nums.length)
 
     // For this conditional we're trying to check if the size of the Set is equal to the length of the array
     // If the array is larger that means that there're dublicates 
@@ -69,8 +70,9 @@ const containsDuplicate = (nums) => {
     if (newSet.size === nums.length){
         return false
     }
-
     return true
 }
 
-console.log(containsDuplicate([1,2,3,1, 2,4,4]))
+console.log(containsDuplicate([1,2,3,1,2,4,4]))
+
+

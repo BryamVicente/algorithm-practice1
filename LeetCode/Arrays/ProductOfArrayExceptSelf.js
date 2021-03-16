@@ -18,26 +18,35 @@ as extra space for the purpose of space complexity analysis.)
 
 // Complexity  = O(n) time and O(n) space 
 
+
+// create a new array 
+
+// create for loop that iterates from left to right 
+// create for loop that iterates from right to left
+
+//return the new array
 const productExceptSelf = (nums) => {
-    
-    let output = []
-    let right = 1
+
+    let answer = []
     let left = 1
+    let right = 1 
 
-    for (let i = 0; i < nums.length; i++){
-        output[i] = left
-        left = left * nums[i]
-    }
-    
-    for (let i = nums.length - 1; i >= 0; i --){
-        output[i] = right* output[i]
-        right = right * nums[i]
-    }
-    return output
+    for(let i = 0; i < nums.length; i++){             
+        answer[i] = left 
+        left = nums[i] * left 
+        // console.log(answer)
+    }              
+   
+    for(let j = nums.length - 1; j >= 0; j--){             
+        answer[j] = right * answer[j]
+        right = nums[j] * right 
+        console.log(answer)
+    }  
+    // console.log(left)
+    // console.log(right)
+
+//    return answer
 }
-
-
-
-
 console.log(productExceptSelf([1,2,3,4]))
-console.log(productExceptSelf([5,6,7,8]))
+console.log(productExceptSelf([-1,1,0,-3,3]))
+console.log(productExceptSelf([5,4,3]))
