@@ -28,3 +28,10 @@ Constraints:
 The input must be a binary string of length 32.
 
 */
+
+const hamminWeight = (n) => {
+
+
+}
+
+console.log(hamminWeight(00000000000000000000000000001011))
