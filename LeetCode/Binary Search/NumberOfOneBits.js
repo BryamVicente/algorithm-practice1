@@ -3,7 +3,8 @@ Write a function that takes an unsigned integer and returns the number of '1' bi
 
 Note:
 
-Note that in some languages, such as Java, there is no unsigned integer type. In this case, the input will be given as a signed integer type. It should not affect your implementation, as the integer's internal binary representation is the same, whether it is signed or unsigned.
+Note that in some languages, such as Java, there is no unsigned integer type. In this case, the input will be given as a signed integer type. 
+It should not affect your implementation, as the integer's internal binary representation is the same, whether it is signed or unsigned.
 In Java, the compiler represents the signed integers using 2's complement notation. Therefore, in Example 3, the input represents the signed integer. -3.
  
 
@@ -30,8 +31,29 @@ The input must be a binary string of length 32.
 */
 
 const hamminWeight = (n) => {
+    console.log("This is n in the beginning: ",n)
+   
+    let sum = 0
 
+    while (n != 0){
+        // console.log(sum)
+        sum += n & 1 
+                   //0001
+        n = n >>> 1 
+        console.log("This is the sum: ",sum)
+        console.log("This is n: ",n)
+    }
+    return sum
 
+    // let sum = 0;
+    // while (n != 0) {
+    //     sum++;
+    //     n &= (n - 1);
+    // }
+    // return sum;
+    
 }
 
 console.log(hamminWeight(00000000000000000000000000001011))
+console.log(hamminWeight(00000000000000000000000010000000))
+console.log(hamminWeight(11111111111111111111111111111101))
