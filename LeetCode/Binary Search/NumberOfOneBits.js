@@ -36,7 +36,7 @@ const hamminWeight = (n) => {
     let sum = 0
 
     while (n != 0){
-        // console.log(sum)
+        console.log(sum)
         sum += n & 1 
                    //0001
         n = n >>> 1 
