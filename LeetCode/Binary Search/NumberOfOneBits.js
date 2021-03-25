@@ -35,8 +35,9 @@ const hamminWeight = (n) => {
    
     let sum = 0
 
+    console.log("The sum before the while loop: ",sum)
+
     while (n != 0){
-        console.log(sum)
         sum += n & 1 
                    //0001
         n = n >>> 1 
@@ -51,9 +52,8 @@ const hamminWeight = (n) => {
     //     n &= (n - 1);
     // }
     // return sum;
-    
 }
 
 console.log(hamminWeight(00000000000000000000000000001011))
-console.log(hamminWeight(00000000000000000000000010000000))
-console.log(hamminWeight(11111111111111111111111111111101))
+// console.log(hamminWeight(00000000000000000000000010000000))
+// console.log(hamminWeight(11111111111111111111111111111101))
