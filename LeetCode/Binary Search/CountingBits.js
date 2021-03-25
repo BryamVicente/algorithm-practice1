@@ -26,7 +26,7 @@ Explanation:
 const countingBits = (num) => {
 
     let answer = [0]
-    console.log("This is the answer we return: ",answer)
+   
     console.log("This is the num: ",num)
     for(let i=1;i<=num;i++){
         console.log("THis is i: ", i)
