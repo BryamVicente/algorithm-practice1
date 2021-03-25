@@ -25,7 +25,27 @@ Explanation:
 
 const countingBits = (num) => {
 
-  
+    let answer = [0]
+    console.log("This is the answer we return: ",answer)
+    console.log("This is the num: ",num)
+    for(let i=1;i<=num;i++){
+        console.log("THis is i: ", i)
+        const and = i&1 
+                
+        console.log("THis is the and: ",and)
+
+        const shift = i>>1 
+       
+        console.log("THis is the shift: ",shift )
+        answer[i] = answer[shift] + and
+
+    }
+    return answer
 }
 
-console.log(countingBits())
+console.log(countingBits(6))
+
+
+
+
+
