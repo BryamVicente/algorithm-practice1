@@ -11,13 +11,14 @@ function fillingTwoMoviesPerFlight(movieLengths, flightLength){
         const firstMovieLength = movieLengths[i]
         const matchingSecondMovieLength = flightLength - firstMovieLength
 
-        if(movieLengthsSeen.has(matchingSecondMovieLength)){
+        if(!movieLengthsSeen.has(matchingSecondMovieLength)){
+            movieLengthsSeen.add(firstMovieLength)
+        }else {
             return true
         }
-        movieLengthsSeen.add(firstMovieLength)
     }
     return false
 }
 
-console.log(fillingTwoMoviesPerFlight([2,3,4,2,1,3], 6))
+console.log(fillingTwoMoviesPerFlight([2,3,2,4], 6))
 
