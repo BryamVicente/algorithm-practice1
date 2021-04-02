@@ -34,6 +34,6 @@ const coinChange = (coins, target) => {
     // make a variable that tracks the least amount of coins
     // Iterate over the coins array to check each element and see which ones add up to the target (amount)
         // Create a conditional that returns -1 if the coins can't add up to the target (amount)
-        // Redefign the variable that we created in step 1
+        // Redefine the variable that we created in step 1
     // return the number of coins (which is the variable that we created in the beginning)
 }
