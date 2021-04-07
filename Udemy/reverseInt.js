@@ -15,15 +15,16 @@ function reverseInt(num){
 
   while (num != 0){
     reversed = reversed * 10 + num % 10
-
+ 
     /*The second argument for parseInt() states it's radix. 
     Since we're going by decimal that's why I chose 10
     */
     num = parseInt(num / 10, 10)
+    console.log("parse",parseInt(num / 10, 10))
   }
   return reversed
 }
-console.log(reverseInt(-43 ))
+console.log(reverseInt(23))
 
 //UDEMY SOLUTION!!
 
