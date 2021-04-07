@@ -38,25 +38,26 @@ input: n = 5
 */
 
 // const climbStairs = (n) => {
-
-//     let seen = {};
-
-//     if(n < 3){
-//         return n;
-//     }else if (!(n in seen)) {
-//         seen[n] = climbStairs(n-1) + climbStairs(n-2);
+    
+//     let a = 1, b = 2, next;
+        
+//     for(let i = 3; i <= n; i++) {
+//         next = a + b;
+//         a = b;
+//         b = next;
 //     }
-//     return seen[n];
-// };
-// console.log(climbStairs(3))
+//     return n === 1 ? a : b;
+// }
+
 const climbStairs = (n) => {
-    
+
+    let prev = 0
+    let cur = 1 
+    let temporary;
+
+    for (let i = 0; i < n; i++ ){
+        
+    }
+
+    return cur
 }
-let a = 1, b = 2, next;
-    
-for(let i = 3; i <= n; i++) {
-    next = a + b;
-    a = b;
-    b = next;
-}
-return n === 1 ? a : b;
