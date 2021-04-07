@@ -23,38 +23,39 @@ Input: x = -101
 Output: false
 */
 
-// const isPalindrome = (num) => {
-
-//     //Reverse the integer 
-//     let reversed = 0
-//     let original = num
-    
-//     while (num != 0){
-//         reversed = reversed * 10 + num % 10
-//         console.log("reversed", reversed)
-
-//         /*The second argument for parseInt() states it's radix. 
-//         Since we're going by decimal that's why I chose 10
-//         */
-//        num = parseInt(num / 10, 10)
-//        console.log("num", num)
-//     }
-//     //After reversing, we need to check if the number is still the same
-//     //return boolean value if the number is or isn't the same 
-//    return reversed === original
-// }
-
-
 const isPalindrome = (num) => {
 
-    let newNum = num.toString().split('').reverse().join('')
-    let parsedNumber = parseInt(newNum)
-    // console.log("newNumber", newNum)
-    // console.log("num",num)
+    // Reverse the integer 
+    let reversed = 0
+    // Create a variable that equals to `num` so we can compare later
+    let original = num
     
-   return parsedNumber === num 
+    while (num != 0){
+        reversed = reversed * 10 + num % 10
+        console.log("reversed", reversed)
+
+        /*The second argument for parseInt() states it's radix. 
+        Since we're going by decimal that's why I chose 10
+        */
+       num = parseInt(num / 10, 10)
+       console.log("num", num)
+    }
+    //After reversing, we need to check if the number is still the same
+    //return boolean value if the number is or isn't the same 
+   return reversed === original
 }
-console.log(isPalindrome(1000000000000001))
+
+
+// const isPalindrome = (num) => {
+
+//     let newNum = num.toString().split('').reverse().join('')
+//     let parsedNumber = parseInt(newNum)
+//     console.log("newNumber", newNum)
+//     console.log("num",num)
+    
+//    return parsedNumber === num 
+// }
+// console.log(isPalindrome(1000000000000001))
 
 // "101"
 // ["1","0","1"]

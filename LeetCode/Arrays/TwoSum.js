@@ -31,15 +31,11 @@ const twoSum = (nums, target) => {
     const numObject = {};
     
     for (let i = 0; i < nums.length; i++){
-        console.log('before', numObject)
         if(numObject[target - nums[i]] >= 0 ){
-            console.log('during', numObject)
             return [numObject[target -nums[i]], i]
         }
-        console.log('after if', numObject)
         numObject[nums[i]] = i
     }
-    console.log('ending', numObject)
 };
 
 const input = [0, 2, 11, 7,8, 15]

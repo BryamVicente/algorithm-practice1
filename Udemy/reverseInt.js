@@ -8,19 +8,16 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-
 function reverseInt(num){
 
   let reversed = 0
 
   while (num != 0){
     reversed = reversed * 10 + num % 10
- 
     /*The second argument for parseInt() states it's radix. 
     Since we're going by decimal that's why I chose 10
     */
     num = parseInt(num / 10, 10)
-    console.log("parse",parseInt(num / 10, 10))
   }
   return reversed
 }

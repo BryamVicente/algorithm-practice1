@@ -55,9 +55,11 @@ const climbStairs = (n) => {
     let cur = 1 
     let temporary;
 
-    for (let i = 0; i < n; i++ ){
-        
-    }
+    // for (let i = 0; i < n; i++ ){
+        //prev = 
+        //temporary += prev
+
+    // }
 
     return cur
 }
