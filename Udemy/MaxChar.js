@@ -1,35 +1,43 @@
 // --- Directions
 // Given a string, return the character that is most
 // commonly used in the string.
-// --- Examples
+
+// --- Examples:
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
-// Complexity = O(n^2) time and O(n^2) space 
+
 function maxChar(str){
     
-    let charMap = {}
+    let charHash = {}
     let max = 0
     let maxChar = ''
-
-    for (let char of str) {
-        if (charMap[char]){
-            charMap[char]++
-        } else {
-            charMap[char] = 1
-        }
-    }
-
-    //We use for in loop to iterate over an object 
     
-    for (let char in charMap){
-        if(charMap[char] > max){
-            max = charMap[char]
-            maxChar = char
+    for (let character of str) {
+        if (charHash[character]){
+            charHash[character]++
+        } else {
+            charHash[character] = 1
         }
     }
 
-    return maxChar
+    for (let character in charHash){
+        if(charHash[character] > max){
+            max = charHash[character]
+            maxChar = character
+    
+        }
+    }
+    return maxChar 
 }
+console.log(maxChar("sttring"))
 
-console.log(maxChar("ssstringggghhhhhhhh"))
+
+
+
+// //We use for in loop to iterate over an object 
+
+
+
+
+// console.log(maxChar("ssstringggghhhhhhhh"))
