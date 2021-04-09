@@ -49,13 +49,13 @@ Output: false
 const isPalindrome = (num) => {
     
     let newNum = num.toString().split('').reverse().join('')
-    let parsedNumber = parseInt(newNum)
-
-    return parsedNumber === num 
+    
+    return newNum === num 
 }
 
 console.log(isPalindrome(-11))
 
+// let parsedNumber = parseInt(newNum)
 // console.log("newNumber", newNum)
 // console.log("num",num)
 
