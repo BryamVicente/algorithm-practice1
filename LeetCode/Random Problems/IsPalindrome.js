@@ -46,15 +46,15 @@ Output: false
 // }
 
 
-const isPalindrome = (num) => {
-    
-    let newNum = num.toString().split('').reverse().join('')
-    
-    return newNum === num 
-}
 
 console.log(isPalindrome(-11))
 
+// const isPalindrome = (num) => {
+    
+//     let newNum = num.toString().split('').reverse().join('')
+    
+//     return newNum == num 
+// }
 // let parsedNumber = parseInt(newNum)
 // console.log("newNumber", newNum)
 // console.log("num",num)
