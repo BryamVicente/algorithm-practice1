@@ -23,32 +23,36 @@ Input: x = -101
 Output: false
 */
 
-// const isPalindrome = (num) => {
+const isPalindrome = (num) => {
 
-//     // Reverse the integer 
-//     let reversed = 0
-//     // Create a variable that equals to `num` so we can compare later
-//     let original = num
+    // Create a variable that represents the reversed number
+    let reversed = 0
+    // Create a variable that equals to `num` so we can compare later
+    let original = num
     
-//     while (num != 0){
-//         reversed = reversed * 10 + num % 10
-//         console.log("reversed", reversed)
+    while (num != 0){
+        reversed = reversed * 10 + num % 10
+        
+        /*The second argument for parseInt() states it's radix. 
+        Since we're going by decimal that's why I chose 10
+        */
+        num = parseInt(num / 10, 10)
 
-//         /*The second argument for parseInt() states it's radix. 
-//         Since we're going by decimal that's why I chose 10
-//         */
-//        num = parseInt(num / 10, 10)
-//        console.log("num", num)
-//     }
-//     //After reversing, we need to check if the number is still the same
-//     //return boolean value if the number is or isn't the same 
-//    return reversed === original
-// }
-
-
-
+        if (reversed < 0){
+            return false        
+        }
+    }
+    return reversed === original
+}
 console.log(isPalindrome(-11))
 
+// console.log("num", num)
+// //After reversing, we need to check if the number is still the same
+// //return boolean value if the number is or isn't the same 
+
+
+
+// console.log("reversed", reversed)
 // const isPalindrome = (num) => {
     
 //     let newNum = num.toString().split('').reverse().join('')
