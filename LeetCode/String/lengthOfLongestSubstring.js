@@ -24,32 +24,33 @@ Input: s = ""
 Output: 0
 */
 
-const lengthOfLongestSubstring = (characters) => {
+// const lengthOfLongestSubstring = (characters) => {
 
-    // create an empty string
-    let newString = ''
-    // create a variable that represents the length of the substring
-    let substringLength = 0
+//     // create an empty string
+//     let newString = ''
+//     // create a variable that represents the length of the substring
+//     let substringLength = 0
     
-    let currentCharacter = ''
+//     let currentCharacter = ''
 
-    for (let char of characters){
-        if (currentCharacter !== char){
-            newString += char
-        }
-        console.log("newString: ", newString)
-    }
+//     for (let char of characters){
+//         if (currentCharacter !== char){
+//             newString += char
+//         }
+//         console.log("newString: ", characters[char])
+//        return newString.includes(char) ? newString.length : "stop"
+//     }
 
-    // console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+//     // console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
 
-    // iterate over the string 
-        //find and hold non-repeating characters
-        // place non repeated characters inside the empty string
+//     // iterate over the string 
+//         //find and hold non-repeating characters
+//         // place non repeated characters inside the empty string
             
 
-    // return substring length(this is a number)
-};
-console.log(lengthOfLongestSubstring("abcabcbb"))
-// console.log(lengthOfLongestSubstring("bbbbb"))
-// console.log(lengthOfLongestSubstring("pwwkew"))
-// console.log(lengthOfLongestSubstring(''))
+//     // return substring length(this is a number)
+// };
+// console.log(lengthOfLongestSubstring("abcabcbb"))
+// // console.log(lengthOfLongestSubstring("bbbbb"))
+// // console.log(lengthOfLongestSubstring("pwwkew"))
+// // console.log(lengthOfLongestSubstring(''))
