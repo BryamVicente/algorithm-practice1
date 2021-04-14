@@ -24,6 +24,51 @@ Input: s = ""
 Output: 0
 */
 
+var lengthOfLongestSubstring = function(s) {
+    let longest = 0;
+    let current = "";
+    
+    for (let i = 0; i < s.length; i++) {
+        current = current.substring(current.indexOf(s[i]) + 1)        
+        current += s[i];
+        
+        if (current.length > longest) {
+            longest = current.length;
+        }
+    }
+    return longest;
+};
+
+console.log(lengthOfLongestSubstring("abcabcbb"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const lengthOfLongestSubstring = (characters) => {
 
 //     // create an empty string
@@ -50,7 +95,3 @@ Output: 0
 
 //     // return substring length(this is a number)
 // };
-// console.log(lengthOfLongestSubstring("abcabcbb"))
-// // console.log(lengthOfLongestSubstring("bbbbb"))
-// // console.log(lengthOfLongestSubstring("pwwkew"))
-// // console.log(lengthOfLongestSubstring(''))
