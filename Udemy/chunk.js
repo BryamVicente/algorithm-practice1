@@ -30,7 +30,6 @@ console.log(chunk([1, 2, 3, 4, 5], 4))
 console.log(chunk([1, 2, 3, 4, 5], 4))
 console.log(chunk([1, 2, 3, 4, 5], 10))
 
-
 //SOLUTION 2!!
 
 // function chunk(array, size) {
@@ -45,26 +44,11 @@ console.log(chunk([1, 2, 3, 4, 5], 10))
 //     return chunked
 // }
 
+// console.log(chunk([1, 2, 3, 4, 5], 2))
+// console.log(chunk([1, 2, 3, 4, 5], 4))
+// console.log(chunk([1, 2, 3, 4, 5], 4))
+// console.log(chunk([1, 2, 3, 4, 5], 10))
 
 
-/*
 
-SOLUTION #1!!!!
 
-function chunk(array, size) {
-    let chunked = []
-
-    for (let element of array){
-        let lastEl = chunked[chunked.length - 1]
-        if (!lastEl || lastEl.length === size){
-            chunked.push([element])
-        } else {
-            lastEl.push(element)
-        }
-    }
-    return chunked
-}
-
-console.log(chunk([1, 2, 3, 4, 5], 2))
-
-*/
