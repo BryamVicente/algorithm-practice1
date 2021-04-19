@@ -30,23 +30,6 @@ console.log(chunk([1, 2, 3, 4, 5], 4))
 console.log(chunk([1, 2, 3, 4, 5], 4))
 console.log(chunk([1, 2, 3, 4, 5], 10))
 
-// for (let number of array){
-//     let lastNumber = newArray[newArray.length - 1]
-//     if (!lastNumber || lastNumber.length === size){
-//         newArray.push([number])
-//     } else {
-//         lastNumber.push(number)
-//     }
-// }
-// return newArray
-
-
-
-
-
-
-
-
 
 //SOLUTION 2!!
 
