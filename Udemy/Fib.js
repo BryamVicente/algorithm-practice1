@@ -1,10 +1,13 @@
 
 
-const fib = (n) => {
-    if (n <= 2){
-        return 1
-    }
-    return fib(n-1) + fib(n-2)
-}
+// Recursive solution!!!
 
-console.log(fib(40))
+// const fib = (n) => {
+//     if (n <= 2){
+//         return 1
+//     }
+//     return fib(n-1) + fib(n-2)
+// }
+
+// console.log(fib(40))
+
