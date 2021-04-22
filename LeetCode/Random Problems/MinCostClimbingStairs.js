@@ -45,35 +45,41 @@ Explanation: Cheapest is: start on cost[0], and only step on 1s, skipping cost[3
 
 
 
-/*
 
-var minCostClimbingStairs = function(cost) {
-    /*
-    Runtime: 64 ms, faster than 100.00% of JavaScript online submissions for Min Cost Climbing Stairs.
-    Memory Usage: 34.9 MB, less than 60.61% of JavaScript online submissions for Min Cost Climbing Stairs.
-    
-    O(n) time, O(1) space
-	
-	- Bottom up strategy
-	- Iterative
-	- Memoization
-	
-	Trick: At index [i], you only need to know the min cost when stepping on [i - 1] and [i - 2]. This is a slight variation on fibonacci.
+// Runtime: 64 ms, faster than 100.00% of JavaScript online submissions for Min Cost Climbing Stairs.
+// Memory Usage: 34.9 MB, less than 60.61% of JavaScript online submissions for Min Cost Climbing Stairs.
+
+// O(n) time, O(1) space
+
+// - Bottom up strategy
+// - Iterative
+// - Memoization
+
+// Trick: At index [i], you only need to know the min cost when stepping on [i - 1] and [i - 2]. This is a slight variation on fibonacci.
+const minCostClimbingStairs = (cost) => {
     
     
     if (cost.length === 1) return 0;
     if (cost.length === 2) return Math.min(cost[0], cost[1]);
     
     let minCostTwoBefore = cost[0];
+    console.log("Two before Outside for loop: ", minCostTwoBefore)
     let minCostOneBefore = cost[1];
+    console.log("One before Outside for loop: ", minCostOneBefore)
     
-    for (let n = 2; n < cost.length; n++) {
-        const minCostAtCurrent = cost[n] + Math.min(minCostOneBefore, minCostTwoBefore);
+    for (let i = 2; i < cost.length; i++) {
+        const minCostAtCurrent = cost[i] + Math.min(minCostOneBefore, minCostTwoBefore);
         
         minCostTwoBefore = minCostOneBefore;
         minCostOneBefore = minCostAtCurrent;
+
+        console.log("Two before: ", minCostTwoBefore)
+        console.log("One before: ", minCostOneBefore)
+        console.log("Current Cost: ", minCostAtCurrent)
     }
         
     return Math.min(minCostOneBefore, minCostTwoBefore);
 };
-*/
+console.log(minCostClimbingStairs([1,100,1,1,1,100,1,1,100,1]))
+
+// [5,7,3,10]
