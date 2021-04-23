@@ -1,16 +1,17 @@
 // Recursive solution!!!
 
-const fib = (n) => {
-    if (n <= 2){
-        return 1
-    }
-    return fib(n-1) + fib(n-2)
-}
+// const fib = (n) => {
+//     if (n <= 2){
+//         return 1
+//     }
+//     return fib(n-1) + fib(n-2)
+// }
 
-console.log(fib(40))
+// console.log(fib(40))
 
 
 // Memoization Solution!!!
+
 // const fib = (n, memo =[]) => {
 //     if (memo[n] !== undefined){
 //         return memo[n]
