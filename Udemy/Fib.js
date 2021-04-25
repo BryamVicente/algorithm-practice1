@@ -23,10 +23,10 @@ const fib = (n) => {
         return 1
     }
 
-    let res = fib(n-1, newArray) + fib(n-2, newArray)
+    let answer = fib(n-1, newArray) + fib(n-2, newArray)
 
-    newArray[n] = res
-    return res
+    newArray[n] = answer
+    return answer
 }
 
 console.log(fib(4))
