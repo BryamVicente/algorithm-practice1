@@ -25,3 +25,12 @@ Constraints:
 -104 <= nums[i] <= 104
 
 */
+
+
+
+const lengthOfLIS = (nums) => {
+    let sortedArray = nums.sort()
+    console.log("Sorted Version: ",sortedArray)
+    
+};
+console.log(lengthOfLIS([10,9,2,5,3,7,101,18]))
