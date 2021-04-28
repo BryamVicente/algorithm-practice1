@@ -20,24 +20,15 @@ s consists only of printable ASCII characters.
 */
 
 const isPalindrome = (s) => {
-    // Have an original string ---> originalString
-    
+
+    // Have an original string that's lowercased and replaces all of the characters
     let newOriginalString = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase()
 
-   
+    // Reverse the string
     let reversedString = newOriginalString.split('').reverse().join('')
-
-    console.log("reversed: ", reversedString )
-
-    console.log("OG: ", newOriginalString )
    
-        // .split
-        // Reverse the string
-        // .join 
-
-// Return boolean value --> ternary or if()
-    // return 
-    
+    // Return boolean value --> ternary or if()
+    return newOriginalString === reversedString ? true : false
 };
-// console.log(isPalindrome("A man, a plan, a canal: Panama"))
+console.log(isPalindrome("A man, a plan, a canal: Panama"))
 console.log(isPalindrome("A man:, a bat"))
