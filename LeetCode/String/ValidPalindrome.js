@@ -18,3 +18,29 @@ Constraints:
 1 <= s.length <= 2 * 105
 s consists only of printable ASCII characters.
 */
+
+const isPalindrome = (s) => {
+    // Have an original string ---> originalString
+    
+    
+    // let lowCase = s.toLowerCase();
+
+    let newOriginalString = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase()
+
+   
+    let reversedString = newOriginalString.split('').reverse().join('')
+
+    console.log("reversed: ", reversedString )
+
+    console.log("OG: ", newOriginalString )
+   
+        // .split
+        // Reverse the string
+        // .join 
+
+// Return boolean value --> ternary or if()
+    // return 
+    
+};
+// console.log(isPalindrome("A man, a plan, a canal: Panama"))
+console.log(isPalindrome("A man:, a bat"))
