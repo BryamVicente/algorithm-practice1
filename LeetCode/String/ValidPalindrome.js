@@ -22,9 +22,6 @@ s consists only of printable ASCII characters.
 const isPalindrome = (s) => {
     // Have an original string ---> originalString
     
-    
-    // let lowCase = s.toLowerCase();
-
     let newOriginalString = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase()
 
    
