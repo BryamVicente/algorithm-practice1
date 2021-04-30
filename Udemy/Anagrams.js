@@ -15,13 +15,13 @@ One string is an anagram of another if it uses the same characters in the same q
 */
 
 //helper function
-const cleanString = (string) => {
+const cleanStringHelper = (string) => {
     return string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
     // console.log("testing", string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
 }
 
 const anagrams = (first, second) => {
-   return cleanString(first) === cleanString(second)
+   return cleanStringHelper(first) === cleanStringHelper(second)
 
 }
 
