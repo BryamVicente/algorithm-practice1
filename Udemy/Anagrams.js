@@ -4,9 +4,16 @@ One string is an anagram of another if it uses the same characters in the same q
 Only consider chatacters, not spaces or punctuation. 
 Consider capital letters to be the same as lower case!
 
---- Examples
+--- Examples:
+
     anagrams('rail safety', 'fairy tales') --> True 
     anagrams('RAIL! SAFETY','fairy tales') --> True
     anagrams('Hi there','Bye there') --> False
-
 */
+
+const anagrams = (first, second) => {
+
+    
+
+}
+console.log(anagrams('rail safety', 'fairy tales'))
