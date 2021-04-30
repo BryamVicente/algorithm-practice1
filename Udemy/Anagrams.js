@@ -35,8 +35,14 @@ const anagrams = (first, second) => {
 //    console.log("second",secondCharMap)
 
     if (Object.keys(firstCharMap).length !== Object.keys(secondCharMap).length){
-        
+        return false 
     }
-
+    
+    for (let char in firstCharMap){
+        if (firstCharMap[char] !== secondCharMap[char]){
+            return false 
+        }
+    }
+    return true 
 }
 console.log(anagrams('rail safety', 'fairy tales'))
