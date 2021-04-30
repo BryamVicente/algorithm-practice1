@@ -14,10 +14,17 @@ One string is an anagram of another if it uses the same characters in the same q
     anagrams('Hi there','Bye there') --> False
 */
 
+//helper function
+const cleanString = (string) => {
+    return string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
+    // console.log("testing", string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
+}
+
 const anagrams = (first, second) => {
-    
+   return cleanString(first) === cleanString(second)
 
 }
+
 console.log(anagrams('rail safety', 'fairy tales'))
 console.log(anagrams('Hi there','Bye there'))
 
