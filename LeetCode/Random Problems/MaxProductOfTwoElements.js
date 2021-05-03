@@ -20,17 +20,3 @@ console.log('2nd: ',maxProduct([1,5,4,5]))
 console.log('3rd: ',maxProduct([3,7]))
 console.log('4th: ',maxProduct([0]))
 
-
-
-
-// for (let num of nums) {
-  
-  //     iMax = Math.max(iMax, Math.min(jMax, num)); 
-  
-  //     jMax = Math.max(jMax, num); 
-  
-  
-  // }   
-  // return (iMax - 1) * (jMax - 1);
-  // console.log(maxProduct([1,5,4,5]))
-  // console.log(maxProduct([7,3]))
