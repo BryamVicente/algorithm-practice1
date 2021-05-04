@@ -22,20 +22,22 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 
 const fizzBuzz = (n) => {
     
-// Create empty array --> outputArray
+    let outputArray = []
 
-// for loop that iterates over 'n'
-    //if n is a mulitple of 3
-        //
-    // else if n is a multiple of 5 
-        //
-    // else if n is a mulitple of 3 and 5
-        //
-    // else 
-        // return i
-// 
-
-// return the outputArray 
-
+    for (let i = 1; i <= n; i++){
+        
+        if (i % 3 === 0 && i % 5 === 0){
+            outputArray.push("FizzBuzz")
+        }else if (i % 5 === 0){
+            outputArray.push("Buzz")
+        }else if (i % 3 === 0 ){
+            outputArray.push("Fizz")
+        }else {
+            outputArray.push(i.toString())
+        }
+    } 
+    return outputArray 
 }
-console.log(fizzBuzz(10))
+console.log(fizzBuzz(15))
+
+// 1, 2, 3, 4, 5, 6, 7

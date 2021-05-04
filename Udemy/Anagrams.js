@@ -16,17 +16,16 @@ One string is an anagram of another if it uses the same characters in the same q
 
 //helper function
 const cleanStringHelper = (string) => {
-    return string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
-    // console.log("testing", string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
+    // return string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
+    console.log("testing", string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join(''))
 }
 
 const anagrams = (first, second) => {
    return cleanStringHelper(first) === cleanStringHelper(second)
-
 }
 
-console.log(anagrams('rail safety', 'fairy tales'))
-console.log(anagrams('Hi there','Bye there'))
+console.log(anagrams('rail safety', 'faiiry tales'))
+// console.log(anagrams('Hi there','Bye there'))
 
 
 
