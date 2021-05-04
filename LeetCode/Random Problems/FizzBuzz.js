@@ -18,5 +18,24 @@ Example 3:
 
 Input: n = 15
 Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
-
 */
+
+const fizzBuzz = (n) => {
+    
+// Create empty array --> outputArray
+
+// for loop that iterates over 'n'
+    //if n is a mulitple of 3
+        //
+    // else if n is a multiple of 5 
+        //
+    // else if n is a mulitple of 3 and 5
+        //
+    // else 
+        // return i
+// 
+
+// return the outputArray 
+
+}
+console.log(fizzBuzz(10))
