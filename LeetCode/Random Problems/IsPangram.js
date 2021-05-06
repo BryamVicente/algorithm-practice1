@@ -12,5 +12,9 @@ Example 2:
 
 Input: sentence = "leetcode"
 Output: false
-
 */
+
+const checkIfPangram = (sentence) => {
+    
+};
+console.log(checkIfPangram("leetcode"))
