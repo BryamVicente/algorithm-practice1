@@ -22,7 +22,7 @@ const checkIfPangram = (sentence) => {
     for (let character of sentence) {
     pangramTable[character] += 1
     }
-};
+}
 console.log(checkIfPangram("thequickbrownfoxjumpsoverthelazydog"))
 console.log(checkIfPangram("leetcode"))
 
