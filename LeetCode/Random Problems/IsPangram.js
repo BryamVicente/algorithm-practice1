@@ -37,7 +37,7 @@ const checkIfPangram = (sentence) => {
 }
 console.log("Example 1: ",checkIfPangram("leetcode"))
 console.log("Example 2: ", checkIfPangram("thequickbrownfoxjumpsoverthelazydog"))
-console.log("",checkIfPangram("LeetCode"))
+console.log("Example 3: ",checkIfPangram("LeetCode"))
 
 
 
