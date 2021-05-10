@@ -14,7 +14,46 @@ Input: sentence = "leetcode"
 Output: false
 */
 
+// First Solution 
 const checkIfPangram = (sentence) => {
     
+    let pangramTable = {}
+
+    for (let character of sentence) {
+    pangramTable[character] += 1
+    }
 };
+console.log(checkIfPangram("thequickbrownfoxjumpsoverthelazydog"))
 console.log(checkIfPangram("leetcode"))
+
+
+// for (let character of sentence) {
+//     pangramTable[character] += 1
+// }
+// let counter = 0
+// for (let key in pangramTable) {
+//     counter++
+// }
+// if (counter === 26) {
+//     return true
+// }
+
+// return false
+
+
+
+
+// console.log(checkIfPangram("anmt"))
+
+
+
+
+// First solution!! 
+
+// const set = new Set();
+// for(let i=0;i<sentence.length;i++){
+//     set.add(sentence[i])
+// }
+// console.log("the set", set)
+
+// return set.length===26 ? true : false;
