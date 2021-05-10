@@ -14,7 +14,7 @@ Input: sentence = "leetcode"
 Output: false
 */
 
-// First Solution 
+
 const checkIfPangram = (sentence) => {
     
     let pangramTable = {}
