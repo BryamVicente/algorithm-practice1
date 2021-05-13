@@ -18,10 +18,11 @@ const checkIfPangram = (sentence) => {
 
     let mySet = new Set()
 
-    for(let i = 0; i < sentence.length; i++){
-        set.add(sentence[i])
+    for(let character of sentence){
+        mySet.add(character)
     }
 
+    return set.length===26 ? true : false;
 }
 
 console.log("Example 1: ",checkIfPangram("leetcode"))
