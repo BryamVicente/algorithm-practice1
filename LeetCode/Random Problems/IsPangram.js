@@ -15,17 +15,18 @@ Output: false
 */
 
 const checkIfPangram = (sentence) => {
-    
+
+    let set = new Set()
+
 }
 
-
 console.log("Example 1: ",checkIfPangram("leetcode"))
+
+
+
+
 // console.log("Example 2: ", checkIfPangram("thequickbrownfoxjumpsoverthelazydog"))
 // console.log("Example 3: ",checkIfPangram("LeetCode"))
-
-
-
-
 
 
 
