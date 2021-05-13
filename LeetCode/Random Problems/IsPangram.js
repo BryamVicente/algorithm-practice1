@@ -15,26 +15,6 @@ Output: false
 */
 
 
-const checkIfPangram = (sentence) => {
-    
-    let pangramTable = {}
-
-    for (let character of sentence) {
-        pangramTable[character] += 1
-    }
-    
-    let counter = 0 
-
-    for (let key in pangramTable) {  
-        counter++
-    }
-
-    if (counter === 26) {
-        return true
-    }
-
-    return false
-}
 console.log("Example 1: ",checkIfPangram("leetcode"))
 // console.log("Example 2: ", checkIfPangram("thequickbrownfoxjumpsoverthelazydog"))
 // console.log("Example 3: ",checkIfPangram("LeetCode"))
@@ -50,3 +30,24 @@ console.log("Example 1: ",checkIfPangram("leetcode"))
 
 
 
+
+// const checkIfPangram = (sentence) => {
+    
+//     let pangramTable = {}
+
+//     for (let character of sentence) {
+//         pangramTable[character] += 1
+//     }
+    
+//     let counter = 0 
+
+//     for (let key in pangramTable) {  
+//         counter++
+//     }
+
+//     if (counter === 26) {
+//         return true
+//     }
+
+//     return false
+// }
