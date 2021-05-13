@@ -16,15 +16,12 @@ Output: false
 
 const checkIfPangram = (sentence) => {
 
-    let set = new Set()
-
-    for(let i=0;i<sentence.length;i++){
-        set.add(sentence[i])
-    }
+    let mySet = new Set()
 
 }
 
 console.log("Example 1: ",checkIfPangram("leetcode"))
+
 
 
 
