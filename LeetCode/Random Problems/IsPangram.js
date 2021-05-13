@@ -14,6 +14,10 @@ Input: sentence = "leetcode"
 Output: false
 */
 
+const checkIfPangram = (sentence) => {
+    
+}
+
 
 console.log("Example 1: ",checkIfPangram("leetcode"))
 // console.log("Example 2: ", checkIfPangram("thequickbrownfoxjumpsoverthelazydog"))
