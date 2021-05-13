@@ -22,7 +22,7 @@ const checkIfPangram = (sentence) => {
         mySet.add(character)
     }
 
-    return set.length===26 ? true : false;
+    return mySet.length === 26 ? true : false;
 }
 
 console.log("Example 1: ",checkIfPangram("leetcode"))
