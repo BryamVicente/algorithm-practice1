@@ -26,6 +26,8 @@ const reverseString = (s) => {
        newString = letter + newString
     }
 
+    return newString.split('')
+
     
   
 
