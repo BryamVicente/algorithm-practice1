@@ -16,3 +16,18 @@ Constraints:
 s[i] is a printable ascii character.
 
 */
+
+const reverseString = (s) => {
+
+    let newString = ''
+   
+
+    for (let letter of s ){
+       newString = letter + newString
+    }
+
+    
+  
+
+}
+console.log(reverseString(["h","e","l","l","o"]))
