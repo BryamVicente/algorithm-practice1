@@ -19,17 +19,14 @@ s[i] is a printable ascii character.
 
 const reverseString = (s) => {
 
-    let newString = ''
+    let newArray = []
    
-
     for (let letter of s ){
-       newString = letter + newString
+       newArray.unshift(letter)
     }
 
-    return newString.split('')
+    console.log(newArray)
 
-    
-  
-
+    // return newString
 }
 console.log(reverseString(["h","e","l","l","o"]))
