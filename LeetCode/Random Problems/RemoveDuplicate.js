@@ -46,32 +46,25 @@ nums is sorted in ascending order.
 const removeDuplicates = (nums) => {
 
     // BIG QUESTION: CAN I USE SETS FOR THIS PROBLEM??
-    // sort the array that's passed in
-    // Create a variable represents the length of the array; start at 0
+
+    // Create a conditional that returns the length of nums if the length is less that 1 
     if (nums.length <= 1){
         return nums.length
     }
-
+    
+    // Create a variable represents the length of the array; start at 1
     let arrayLength = 1
 
+    // Iterate over the sorted nums 
     for (let i = 1; i < nums.length; i++){
+        // Conditionat states --> if the current element being iterated is not equal to the previous
         if (nums[i] != nums[i-1]){
-            nums[arrayLength++] = nums[i]
-            
+
+            // increment Arraylength 
+            nums[arrayLength++] = nums[i]  
         }
-
-        // console.log(nums[i])
     }
-
-   return arrayLength
-
-
-    // return 
-
-    // Iterate over the sorted nums
-        // 
-
-
-    // return the length of the "new array" which is an integer  
+    //return the length of the "new array" which is an integer 
+    return arrayLength
 };
 console.log(removeDuplicates([1,1,2]))
