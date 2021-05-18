@@ -48,20 +48,23 @@ const removeDuplicates = (nums) => {
     // BIG QUESTION: CAN I USE SETS FOR THIS PROBLEM??
     // sort the array that's passed in
     // Create a variable represents the length of the array; start at 0
-    let set = new Set ()
+  
 
+    
+    let arrayLength = 1
+    
     for (let number of nums){
 
-        set.add(num)
+       
     }
-    console.log()
+    // console.log("this is the new set:", set)
 
-    // return set.size
+    return 
 
     // Iterate over the sorted nums
         // 
 
 
-    // return the length of the "new array" which is an integer
-    
+    // return the length of the "new array" which is an integer  
 };
+console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
