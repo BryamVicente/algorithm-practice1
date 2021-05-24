@@ -1,6 +1,9 @@
 
 const runningSum = (nums) => {
 
+    for (let i = 1; i < nums.length; i++){
+
+    }
     
 }
 console.log(runningSum([1,2,3,4]))
