@@ -2,9 +2,9 @@
 const runningSum = (nums) => {
 
     for (let i = 1; i < nums.length; i++){
-
+        console.log("this is nums[i]", nums[i])
     }
-    
+
 }
 console.log(runningSum([1,2,3,4]))
 
