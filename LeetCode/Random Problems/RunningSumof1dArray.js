@@ -6,9 +6,9 @@ const runningSum = (nums) => {
     }
     return nums
 }
-console.log(runningSum([1,2,3,4]))
-console.log(runningSum([1,1,1,1,1]))
-console.log(runningSum([3,1,2,10,1]))
+console.log('Example 1: ',runningSum([1,2,3,4]))
+console.log('Example 2: ',runningSum([1,1,1,1,1]))
+console.log('Example 3: ',runningSum([3,1,2,10,1]))
 
 
 
