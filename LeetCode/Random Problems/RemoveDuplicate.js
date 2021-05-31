@@ -1,7 +1,19 @@
 
 const removeDuplicates = (nums) => {
 
+    // Create a variable that represents the length of the array
+
+    // Iterate over the 'nums' array using a for statement 
+        // Create a conditional that compares the current number 'nums[i]' to the previous
+        // If they're not equal to each other, then incremenet the length of the array
+    //
+
+    // Create a conditional that returns the length of the nums array if the length is less than or equal to 1
+
+    //return the length of the array
 }
+console.log(removeDuplicates([1,1,2]))
+console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
 
 // const removeDuplicates = (nums) => {
 
