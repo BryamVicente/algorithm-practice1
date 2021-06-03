@@ -24,3 +24,6 @@ Constraints:
 strs[i] consists of lower-case English letters.
 */
 
+const groupAnagrams = (strs) => {
+    
+}
