@@ -33,9 +33,11 @@ const groupAnagrams = (strs) => {
     for (let i = 0; i < strs.length; i++){
         // While looping through "strs", we need to sort the strings alphabetically 
         let sortedString = strs[i].split("").sort().join("")
+        console.log("sorted string: ", sortedString)
 
         // If the sorted string doesn't exist in the hash, add it as a key! 
         
+
     }
 
 }
