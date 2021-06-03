@@ -41,11 +41,10 @@ const groupAnagrams = (strs) => {
             // push the unsorted string into the key's existing array of values 
             hashTable[sortedString].push(strs[i])
         }
-        console.log("sorted string: ", hashTable)
+        // console.log("sorted string: ", hashTable)
     }
-
-    // Since the question is asking to return array of the anagrams, we have to convert from Object to array 
-    return 
     
+    // Since the question is asking to return array of the anagrams, we have to convert from Object to
+    return Object.values(hashTable)
 }
 console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
