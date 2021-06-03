@@ -25,5 +25,6 @@ strs[i] consists of lower-case English letters.
 */
 
 const groupAnagrams = (strs) => {
-    
+
 }
+console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
