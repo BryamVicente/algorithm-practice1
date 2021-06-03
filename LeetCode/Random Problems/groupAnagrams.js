@@ -35,8 +35,10 @@ const groupAnagrams = (strs) => {
         let sortedString = strs[i].split("").sort().join("")
         console.log("sorted string: ", sortedString)
 
-        // If the sorted string doesn't exist in the hash, add it as a key! 
-        
+        // Create conditional: If the sorted string doesn't exist in the hash, add it as a key! 
+        if (!hashTable[sortedString]){
+            hashTable[sortedString] = [strs[i]]
+        }
 
     }
 
