@@ -38,6 +38,9 @@ const groupAnagrams = (strs) => {
         // Create conditional: If the sorted string doesn't exist in the hash, add it as a key! 
         if (!hashTable[sortedString]){
             hashTable[sortedString] = [strs[i]]
+        }else {
+            // push the unsorted string into the key's existing array of values 
+            hashTable[sortedString].push(strs[i])
         }
 
     }
