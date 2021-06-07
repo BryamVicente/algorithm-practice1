@@ -3,6 +3,7 @@
 const groupAnagrams = (strs) => {
 
     // Create hash table to keep track of which strings are made with what letters 
+    const hashTable = {}
     
     // Create for loop to itereate over "strs"
     // While looping through "strs", we need to sort the strings alphabetically 
@@ -11,12 +12,11 @@ const groupAnagrams = (strs) => {
     // push the unsorted string into the key's existing array of values 
     // console.log("sorted string: ", hashTable)
     
-    // Since the question is asking to return array of the anagrams, we have to convert from Object to
+    // Since the question is asking to return array of the anagrams, we have to convert from Object to Array
 }
 console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
 
 
-// const hashTable = {}
 // for (let i = 0; i < strs.length; i++){
     // let sortedString = strs[i].split("").sort().join("")
     // if (!hashTable[sortedString]){
