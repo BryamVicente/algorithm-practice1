@@ -4,7 +4,7 @@ const groupAnagrams = (strs) => {
 
     // Create hash table to keep track of which strings are made with what letters 
     
-    // Create for loop to keep itereate over "strs"
+    // Create for loop to itereate over "strs"
     // While looping through "strs", we need to sort the strings alphabetically 
     
     // Create conditional: If the sorted string doesn't exist in the hash, add it as a key! 
