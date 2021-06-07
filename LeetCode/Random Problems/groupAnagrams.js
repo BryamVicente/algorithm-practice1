@@ -20,5 +20,8 @@ const groupAnagrams = (strs) => {
     // Since the question is asking to return array of the anagrams, we have to convert from Object to Array
     return Object.values(hashTable)
 }
+// [""]
 console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
+console.log(groupAnagrams([""]))
+console.log(groupAnagrams(["a"]))
 
