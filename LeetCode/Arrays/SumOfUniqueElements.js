@@ -22,5 +22,11 @@ Explanation: The unique elements are [1,2,3,4,5], and the sum is 15.
 
 const sumOfUnique = (nums) => {
 
+    let uniqueSet = new Set()
+
+    for(let num of nums){
+        
+    }
+
 }
 console.log(sumOfUnique([1,2,3,2]))
