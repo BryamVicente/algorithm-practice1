@@ -17,26 +17,16 @@ const sumOfUnique = (nums) => {
     }
 
     // Create a for in loop for hash table
+    for(let key in uniqueHash){
         // Create conditional --> if the key value is less than 2 increment sum value 
-    //
-
-    //return the sum 
-
-};
-console.log(sumOfUnique([1,2,3,2]))
-
-
-
-
-/*
-  
-
-    
-    for(let key in obj){
-        if(obj[key] < 2){
-            sum += parseInt(key)
+        if(uniqueHash[key] < 2){
+            uniqueSum += parseInt(key)
         }
     }
-    return sum
+    //return the sum 
+    return uniqueSum
+};
+console.log(sumOfUnique([1,2,3,2]))
+console.log(sumOfUnique([1,2,3,4,5]))
 
-*/
+
