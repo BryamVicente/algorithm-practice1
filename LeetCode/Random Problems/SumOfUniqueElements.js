@@ -26,7 +26,7 @@ const sumOfUnique = (nums) => {
     //return the sum 
     return uniqueSum
 };
-console.log(sumOfUnique([1,2,3,2]))
-console.log(sumOfUnique([1,2,3,4,5]))
+console.log("Example 1: ",sumOfUnique([1,2,3,2]))
+console.log("Example 2: ",sumOfUnique([1,2,3,4,5]))
 
 
