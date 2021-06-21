@@ -1,27 +1,29 @@
 
-var sortArrayByParity = function(nums) {
+const sortArrayByParity = (nums) => {
     // Create an empty array 
     let result = []
     
     // Create for loop to iterate over `nums`
     for (let i = 0; i < nums.length; i++){
         // if nums[i] is even then add to the front of array (.unshift())
-        // else add to then end of array (.push())
+        if (nums[i] % 2 === 0){
+            result.unshift(nums[i])
+        }else {
+            // else add to then end of array (.push())
+            result.push(nums[i])
+        }
     }
-    
-    
     // Return the empty array from step 1
+    return result
     
 };
 console.log("Example 1: ",sortArrayByParity([3,1,2,4]))
+console.log("Example 2: ",sortArrayByParity([3,1,2,4,5,6,8]))
 
 
 
 // console.log("results: ",result)
-    // if (nums[i] % 2 === 0){
-        //     result.unshift(nums[i])
         // }else {
-            //     result.push(nums[i])
             // }
             
 
