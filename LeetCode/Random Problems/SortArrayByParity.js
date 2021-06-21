@@ -22,9 +22,7 @@ console.log("Example 2: ",sortArrayByParity([3,1,2,4,5,6,8]))
 
 
 
-// console.log("results: ",result)
-        // }else {
-            // }
+
             
 
 /*
