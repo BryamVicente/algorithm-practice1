@@ -17,12 +17,19 @@ Note:
 
 var sortArrayByParity = function(nums) {
     // Create an empty array 
+    let result = []
 
     // Create for loop to iterate over `nums`
+    for (let i = 0; i < nums.length; i++){
         // if nums[i] is even then add to the front of array (.unshift())
-        //else add to the end of array(.push())
-    //
+        if (nums[i] / 2){
+            result.unshift(nums[i])
+        }
+
+        console.log("results: ",result)
+    }
 
     // Return the empty array from step 1
+    
 };
 console.log(sortArrayByParity([3,1,2,4]))
