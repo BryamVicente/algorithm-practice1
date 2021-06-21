@@ -4,9 +4,11 @@ var sortArrayByParity = function(nums) {
     let result = []
     
     // Create for loop to iterate over `nums`
+    for (let i = 0; i < nums.length; i++){
         // if nums[i] is even then add to the front of array (.unshift())
         // else add to then end of array (.push())
-    //
+    }
+    
     
     // Return the empty array from step 1
     
@@ -16,14 +18,12 @@ console.log("Example 1: ",sortArrayByParity([3,1,2,4]))
 
 
 // console.log("results: ",result)
-// for (let i = 0; i < nums.length; i++){
     // if (nums[i] % 2 === 0){
         //     result.unshift(nums[i])
         // }else {
             //     result.push(nums[i])
             // }
             
-            // }
 
 /*
 Given an array nums of non-negative integers, return an array consisting of all
