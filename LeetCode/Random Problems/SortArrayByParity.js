@@ -15,7 +15,6 @@ const sortArrayByParity = (nums) => {
     }
     // Return the empty array from step 1
     return result
-    
 };
 console.log("Example 1: ",sortArrayByParity([3,1,2,4]))
 console.log("Example 2: ",sortArrayByParity([3,1,2,4,5,6,8]))
@@ -41,3 +40,4 @@ Note:
 1 <= nums.length <= 5000
 0 <= nums[i] <= 5000
 */
+
