@@ -15,8 +15,8 @@ const twoSum = (numbers, target) => {
     }
 }
 console.log("Example 1: ",twoSum([2,7,11,15], 17))
-
-
+console.log("Example 2: ",twoSum([2,3,4], 6))
+console.log("Example 3: ",twoSum([-1,0], -1))
 
 
 
