@@ -1,6 +1,10 @@
 
 const twoSum = (numbers, target) => {
     let left = 0, right = numbers.length-1, theSum;
+
+    while (left < right) {
+
+    }
 }
 console.log(twoSum([2,7,11,15], 17))
 
