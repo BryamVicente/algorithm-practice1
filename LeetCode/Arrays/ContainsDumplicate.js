@@ -21,11 +21,11 @@ Notes:
 // Source: https://www.youtube.com/watch?v=eNhmrzS_hY0 
 
 
-const containsDuplicate = () => {
+const containsDuplicate = (nums) => {
 
     // Create a hashtable to keep track of how many elements are duplicates 
+    let hashTable = {}
     
-
     // Iterate over nums to check each element 
 
     // Return boolean if a duplicated exists 
