@@ -14,19 +14,32 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 
 // Source: https://www.youtube.com/watch?v=Nd9NmgJtfo4 
 
-
 const maxProfit = (prices) => {
+    // Create a variable that represents the max number 
+    // prices[0] is the beginning of the array. which means that I can't sell on this day 
 
-    let maxNumber = 0
-    let startingDay = prices[0]
+    //for loop that iterates over prices. I'm starting the 1th place since it represents the first day!  
+        // Compare prices[i] and prices[0] to see which is the smaller number 
+        // Compare the max number and prices[i] - the beginning of array and see which number is higher  
 
-    for(let i = 1; i < prices.length;i++){
+    // Return the max number/profit 
 
-        startingDay = Math.min(prices[i], startingDay)
-
-        maxNumber = Math.max( maxNumber, prices[i] - startingDay)
-    }
-
-    return maxNumber
 }
-console.log(maxProfit([1,4,5,3,6,4]))
+console.log("Example 1: ", maxProfit([7,1,5,3,6,4]))
+
+
+// const maxProfit = (prices) => {
+
+//     let maxNumber = 0
+//     let startingDay = prices[0]
+
+//     for(let i = 1; i < prices.length;i++){
+
+//         startingDay = Math.min(prices[i], startingDay)
+
+//         maxNumber = Math.max( maxNumber, prices[i] - startingDay)
+//     }
+
+//     return maxNumber
+// }
+// console.log(maxProfit([1,4,5,3,6,4]))
