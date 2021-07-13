@@ -5,11 +5,12 @@ const removeElement = (nums, val) => {
     for (let i = 0; i < nums.length; i++) {
         // Create an if statement that can compare the current number and val
         if(nums[i] === val){
-        // if they match I should replace/swap them
-
+        // if they match I should replace/swap them and decrement 
+            nums.splice(i, 1);
+            i--;
         }
        
-        // if they don't then i should decrement
+        
     }
 
     // return the nums length 
