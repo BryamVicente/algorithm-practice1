@@ -9,11 +9,9 @@ const removeElement = (nums, val) => {
             nums.splice(i, 1);
             i--;
         }
-       
-        
     }
-
-    // return the nums length 
+    // return the nums length. The example
+    return nums.length;
 }
 console.log("Example 1: ", removeElement([3,2,2,3], 3))
 
