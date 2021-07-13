@@ -20,6 +20,26 @@ Notes:
 // Search the difference between Set() and Arrays
 // Source: https://www.youtube.com/watch?v=eNhmrzS_hY0 
 
+
+const containsDuplicate = () => {
+
+    // Create a hashtable to keep track of how many elements are duplicates 
+    
+
+    // Iterate over nums to check each element 
+
+    // Return boolean if a duplicated exists 
+
+}
+console.log(containsDuplicate([1,2,3,1,2,4,4]))
+
+
+
+
+
+
+
+
 // const containsDuplicate = (nums) => {
    
      // We create a Set because the values should be unique
@@ -57,21 +77,21 @@ Notes:
 
 // -------------------------------------------------------------------------------//
 
-const containsDuplicate = (nums) => {
+// const containsDuplicate = (nums) => {
 
-    // We create a Set because the values should be unique
-    let newSet = new Set(nums)
-    console.log(newSet.size)
-    console.log(nums.length)
+//     // We create a Set because the values should be unique
+//     let newSet = new Set(nums)
+//     console.log(newSet.size)
+//     console.log(nums.length)
 
-    // For this conditional we're trying to check if the size of the Set is equal to the length of the array
-    // If the array is larger that means that there're dublicates 
-    // If they're equal to each other then it should return false or else it should return true
-    if (newSet.size === nums.length){
-        return false
-    }
-    return true
-}
+//     // For this conditional we're trying to check if the size of the Set is equal to the length of the array
+//     // If the array is larger that means that there're dublicates 
+//     // If they're equal to each other then it should return false or else it should return true
+//     if (newSet.size === nums.length){
+//         return false
+//     }
+//     return true
+// }
 
 console.log(containsDuplicate([1,2,3,1,2,4,4]))
 
