@@ -20,18 +20,47 @@ Notes:
 // Search the difference between Set() and Arrays
 // Source: https://www.youtube.com/watch?v=eNhmrzS_hY0 
 
-
 const containsDuplicate = (nums) => {
 
     // Create a hashtable to keep track of how many elements are duplicates 
     let hashTable = {}
     
     // Iterate over nums to check each element 
-
+    for (let num of nums){
+        hashTable[num] = hashTable[num] + 1 || 1
+        if (hashTable[num] > 1){
+            return true 
+        }
+    }
+    
     // Return boolean if a duplicated exists 
-
+    return false
 }
-console.log(containsDuplicate([1,2,3,1,2,4,4]))
+console.log(containsDuplicate([1,2,4,4]))
+
+
+// const containsDuplicate = (nums) => {
+
+//     // Create a hashtable to keep track of how many elements are duplicates 
+//     let hashTable = {}
+    
+//     // Iterate over nums to check each element 
+//     for (let num of nums){
+//         // console.log("Before if: ", hashTable)
+//         if(hashTable[num]){
+//             return true
+//         }else {
+//             hashTable[num] = true
+//             console.log("else: ", hashTable) 
+//         }
+//     }
+    
+//     return false
+     
+//     // Return boolean if a duplicated exists 
+
+// }
+// console.log(containsDuplicate([1,2,4,4]))
 
 
 
@@ -93,6 +122,6 @@ console.log(containsDuplicate([1,2,3,1,2,4,4]))
 //     return true
 // }
 
-console.log(containsDuplicate([1,2,3,1,2,4,4]))
+// console.log(containsDuplicate([1,2,3,1,2,4,4]))
 
 
