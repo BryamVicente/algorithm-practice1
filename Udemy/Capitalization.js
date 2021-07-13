@@ -16,7 +16,7 @@ of each word in the string then return the capitalized string.
 const capitalize = (string) => {
     // Create empty array
     let words = []
-    
+
     //split the input 'string'
     let splitString = string.split(' ')
 
