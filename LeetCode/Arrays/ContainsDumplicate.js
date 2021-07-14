@@ -20,23 +20,54 @@ Notes:
 // Search the difference between Set() and Arrays
 // Source: https://www.youtube.com/watch?v=eNhmrzS_hY0 
 
-const containsDuplicate = (nums) => {
+// const containsDuplicate = (nums) => {
+
+//     // Create a hashtable to keep track of how many elements are duplicates 
+//     let hashTable = {}
+    
+//     // Iterate over nums to check each element 
+//     for (let num of nums){
+//         hashTable[num] = hashTable[num] + 1 || 1
+//         if (hashTable[num] > 1){
+//             return true 
+//         }
+//     }
+
+//     // Return boolean if a duplicated exists 
+//     return false
+// }
+// console.log(containsDuplicate([1,2,4,-2]))
+
+const howManyDuplicates = (nums) => {
 
     // Create a hashtable to keep track of how many elements are duplicates 
     let hashTable = {}
     
     // Iterate over nums to check each element 
     for (let num of nums){
-        hashTable[num] = hashTable[num] + 1 || 1
-        if (hashTable[num] > 1){
-            return true 
+        // hashTable[num] = hashTable[num] + 1 || 1
+        // if (hashTable[num] > 1){
+        //     return true 
+        // }
+        if (hashTable[num]){
+            hashTable[num] += 1
+        }else{
+            hashTable[num] = 1
+        }
+        // return false
+    }
+
+    const dups = []
+    for (let num in hashTable){
+        if (hashTable[num] > 1) {
+            dups.push(num)
         }
     }
-    
+    console.log(hashTable)
     // Return boolean if a duplicated exists 
-    return false
+    return dups
 }
-console.log(containsDuplicate([1,2,4,4]))
+console.log(howManyDuplicates([1,2,4,3,4, 2]))
 
 
 // const containsDuplicate = (nums) => {
