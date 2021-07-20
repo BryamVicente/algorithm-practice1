@@ -13,6 +13,8 @@ const helperFunction = (string) => {
 // Create the main function where I pass in string1 and string2
 const anagrams = (string1,string2) => {
     // Call the helper function that I created and use it on both strings 
+    const firstString = helperFunction(first)
+    const secondString = helperFunction(second)
     // Create a conditional that compares the length of both strings being compared
         // return false if they don't match 
     // Iterate over first string 
