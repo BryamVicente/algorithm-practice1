@@ -21,7 +21,13 @@ const anagrams = (string1,string2) => {
         return false 
     }
     // Iterate over first string 
-        // Create a conditonal that compares the current character of both string1 and string2 
+    for(let character in firstString){
+        // Create a conditonal that compares the current character of both strings 
+        if(firstString[character] !== secondString[character]){
             // return false if they don't match 
+            return false
+        }
+    }
     // return true if they match 
+    return true
 }
