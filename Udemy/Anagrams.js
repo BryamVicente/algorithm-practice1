@@ -1,9 +1,10 @@
 
 // First I will create a helper function that takes in a string as an argument
+const helperFunction = () => {
     // I'll create a hashtable to keep track of the characters in a string 
     // Itereate over the string
     // return that specific string 
-//
+}
 
 
 // Create the main function where I pass in string1 and string2
