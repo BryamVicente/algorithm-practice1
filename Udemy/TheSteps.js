@@ -14,6 +14,9 @@ steps(3)
 */
 
 const steps = (N) => {
+// Create a for loop that iterates over N 
+    // console log/print the # character along with an empty space 
+    
 
 }
 console.log("Example 1: ", steps(2))
