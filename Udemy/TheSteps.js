@@ -13,3 +13,8 @@ steps(3)
 '###'
 */
 
+const steps = (N) => {
+
+}
+console.log("Example 1: ", steps(2))
+
