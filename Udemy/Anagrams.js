@@ -16,7 +16,10 @@ const anagrams = (string1,string2) => {
     const firstString = helperFunction(first)
     const secondString = helperFunction(second)
     // Create a conditional that compares the length of both strings being compared
+    if (Object.keys(firstString).length !== Object.keys(secondString).length){
         // return false if they don't match 
+        return false 
+    }
     // Iterate over first string 
         // Create a conditonal that compares the current character of both string1 and string2 
             // return false if they don't match 
