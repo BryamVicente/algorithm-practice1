@@ -31,5 +31,5 @@ const anagrams = (string1,string2) => {
 }
 console.log("Example 1:",anagrams('rail safety', 'fairy tales'))
 console.log("Example 2:",anagrams('RAIL! SAFETY','fairy tales'))
-console.log("Example 3:",anagrams('bobby','lobby'))
+
 
