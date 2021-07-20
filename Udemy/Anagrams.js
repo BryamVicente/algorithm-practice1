@@ -1,7 +1,8 @@
 
 // First I will create a helper function that takes in a string as an argument
-const helperFunction = () => {
+const helperFunction = (string) => {
     // I'll create a hashtable to keep track of the characters in a string 
+    let hashString = {}
     // Itereate over the string
     // return that specific string 
 }
