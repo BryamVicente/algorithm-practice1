@@ -12,9 +12,8 @@ const helperFunction = (string) => {
 }
 // Create the main function where I pass in string1 and string2
 const anagrams = (string1,string2) => {
-    // Call the helper function that I created and use it on both strings 
-    const firstString = helperFunction(first)
-    const secondString = helperFunction(second)
+    const firstString = helperFunction(string1)
+    const secondString = helperFunction(string2)
     // Create a conditional that compares the length of both strings being compared
     if (Object.keys(firstString).length !== Object.keys(secondString).length){
         // return false if they don't match 
@@ -28,6 +27,9 @@ const anagrams = (string1,string2) => {
             return false
         }
     }
-    // return true if they match 
     return true
 }
+console.log("Example 1:",anagrams('rail safety', 'fairy tales'))
+console.log("Example 2:",anagrams('RAIL! SAFETY','fairy tales'))
+console.log("Example 3:",anagrams('bobby','lobby'))
+
