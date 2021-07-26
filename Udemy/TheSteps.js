@@ -13,11 +13,17 @@ steps(3)
 '###'
 */
 
+// Solution #1
 const steps = (N) => {
-// Create a for loop that iterates over N 
-    // console log/print the # character along with an empty space 
-    
-
+// Create a for loop that iterates throw rows 
+    // Create empty string 
+    // iterate through columns 
+        // if current column is less than or equal to the current row 
+            // add a "#" to empty string 
+        // else add a space to the empty string 
+    // console log the string that I created 
 }
 console.log("Example 1: ", steps(2))
 
+
+// Solution #2 -> recursion 
