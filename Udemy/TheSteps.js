@@ -23,6 +23,9 @@ const steps = (N) => {
         // Another for loop that iterates through the columns 
         for(let j = 0; j < N; j++ ){
         // if current column is less than or equal to the current row 
+            if (j <= i){
+                stairs += "#"
+            }
             // add a "#" to empty string 
         // else add a space to the empty string 
         }
