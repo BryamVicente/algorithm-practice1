@@ -19,7 +19,6 @@ const steps = (N) => {
     for (let i = 0; i < N; i++){
         // Create empty string 
         let stairs = ''
-
         // Another for loop that iterates through the columns 
         for(let j = 0; j < N; j++ ){
         // if current column is less than or equal to the current row 
@@ -36,6 +35,7 @@ const steps = (N) => {
     }
 }
 console.log("Example 1: ", steps(2))
+console.log("Example 2: ", steps(5))
 
 
 // Solution #2 -> recursion 
