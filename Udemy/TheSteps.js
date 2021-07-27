@@ -24,10 +24,12 @@ const steps = (N) => {
         for(let j = 0; j < N; j++ ){
         // if current column is less than or equal to the current row 
             if (j <= i){
-                // add a "#" to empty string 
+            // add a "#" to empty string 
                 stairs += "#"
+            }else {
+            // else add a space to the empty string 
+                stairs += " "
             }
-        // else add a space to the empty string 
         }
     }
     // console log the string that I created 
