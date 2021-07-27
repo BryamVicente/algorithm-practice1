@@ -31,8 +31,9 @@ const steps = (N) => {
                 stairs += " "
             }
         }
+        // console log the string that I created 
+        console.log(stairs)
     }
-    // console log the string that I created 
 }
 console.log("Example 1: ", steps(2))
 
