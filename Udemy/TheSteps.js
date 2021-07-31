@@ -49,6 +49,11 @@ console.log("Example 2: ", steps(5))
 
 
 const steps = (N) => {
-    // 
+// similar to the last solution, we'll treat this as a table with rows and columns 
+    // Base Case --> if row === n --> return; 
+
+    //if the results string's length === n, I've reached end of row 
+
+    // if the result string's length is <= the row --> add '#', if not add a space 
 
 }
