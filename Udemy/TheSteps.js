@@ -48,9 +48,12 @@ console.log("Example 2: ", steps(5))
     // Call function but change your arguments 
 
 
-const steps = (N) => {
+const steps = (n, row) => {
 // similar to the last solution, we'll treat this as a table with rows and columns 
     // Base Case --> if row === n --> return; 
+    if (n === row){
+        return;
+    }
 
     //if the results string's length === n, I've reached end of row 
 
