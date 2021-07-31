@@ -58,6 +58,7 @@ const steps = (n, row = 0, stairString = '') => {
     //if the results string's length === n, I've reached end of row 
     if (n === stairString.length){
         console.log(stairString)
+        steps(n, row + 1)
     }
 
     // if the result string's length is <= the row --> add '#', if not add a space 
