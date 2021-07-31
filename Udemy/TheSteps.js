@@ -42,3 +42,4 @@ console.log("Example 2: ", steps(5))
 
 // Recursion: 
     // Figure out the bare minumum pieces of info to represent your problem 
+    // Give reasonable default inputs for the problem 
