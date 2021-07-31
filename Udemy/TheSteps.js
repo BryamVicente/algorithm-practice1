@@ -48,7 +48,7 @@ console.log("Example 2: ", steps(5))
     // Call function but change your arguments 
 
 
-const steps = (n, row) => {
+const steps = (n, row = 0, stairString = '') => {
 // similar to the last solution, we'll treat this as a table with rows and columns 
     // Base Case --> if row === n --> return; 
     if (n === row){
@@ -56,6 +56,9 @@ const steps = (n, row) => {
     }
 
     //if the results string's length === n, I've reached end of row 
+    if (n === stairString.length){
+        console.log(stairString)
+    }
 
     // if the result string's length is <= the row --> add '#', if not add a space 
 
