@@ -14,6 +14,7 @@ steps(3)
 */
 
 // Solution #1
+/*
 const steps = (N) => {
 // Create a for loop that iterates throw rows 
     for (let i = 0; i < N; i++){
@@ -36,7 +37,7 @@ const steps = (N) => {
 }
 console.log("Example 1: ", steps(2))
 console.log("Example 2: ", steps(5))
-
+*/
 
 // Solution #2 -> recursion 
 
@@ -45,3 +46,9 @@ console.log("Example 2: ", steps(5))
     // Give reasonable default inputs for the problem 
     // Check the base case
     // Call function but change your arguments 
+
+
+const steps = (N) => {
+    // 
+
+}
