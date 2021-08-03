@@ -55,7 +55,7 @@ const steps = (n, row = 0, stairString = '') => {
         return;
     }
 
-    //if the results string's length === n, I've reached end of row 
+    // if the results string's length === n, I've reached end of row 
     if (n === stairString.length){
         console.log(stairString)
        return steps(n, row + 1)
@@ -71,3 +71,4 @@ const steps = (n, row = 0, stairString = '') => {
     // Call the steps function again
     steps(n, row, stairString)
 }
+console.log("Example 1: ",steps(4))
