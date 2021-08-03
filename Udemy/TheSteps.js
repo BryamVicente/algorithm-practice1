@@ -62,8 +62,12 @@ const steps = (n, row = 0, stairString = '') => {
     }
 
     // if the result string's length is <= the row --> add '#', if not add a space 
-
     if (stairString.length <= row ){
         stairString += '#'
+    }else {
+        stairString += ' '
     }
+
+    // Call the steps function again
+    steps(n, row, stairString)
 }
