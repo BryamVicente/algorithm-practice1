@@ -6,3 +6,8 @@ F(0) = 0, F(1) = 1
 F(n) = F(n - 1) + F(n - 2), for n > 1.
 Given n, calculate F(n).
 */
+
+const fib = (n) => {
+    
+};
+console.log(fib(2))
