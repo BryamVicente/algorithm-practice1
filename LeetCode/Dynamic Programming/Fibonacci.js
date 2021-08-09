@@ -30,8 +30,8 @@ const fib = (n) => {
     }
 
 // Return the fib equation --> (n-1) + (n-2) if n > 1
-    
+    return fib(n - 1) + fib(n - 2)
 };
 // console.log(fib(2))
-console.log(fib(0))
-console.log(fib(1))
+console.log("Less than 1: ",fib(0))
+console.log("Equal to 1: ",fib(1))
