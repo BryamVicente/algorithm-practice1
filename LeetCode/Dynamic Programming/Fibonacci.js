@@ -24,6 +24,10 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 */
 
 const fib = (n) => {
+// Create a conditional that automitically returns n if n === 0 && 1
+
+// Return the fib equation --> (n-1) + (n-2) if n > 1
     
 };
 console.log(fib(2))
+console.log(fib(0))
