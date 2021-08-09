@@ -33,5 +33,7 @@ const fib = (n) => {
     return fib(n - 1) + fib(n - 2)
 };
 
-console.log("Less than 1: ",fib(0))
-console.log("Equal to 1: ",fib(1))
+console.log("F(0): ",fib(0))
+console.log("F(1): ",fib(1))
+console.log("F(4): ",fib(4))
+console.log("F(3): ",fib(3))
